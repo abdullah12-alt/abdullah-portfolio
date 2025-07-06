@@ -1,0 +1,571 @@
+<!doctype html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Abdullah Hassan</title>
+    <meta name="description" content="" />
+    <link rel="shortcut icon" href="./assets/logo.png" type="image/x-icon" />
+
+    <!-- Open Graph / Facebook -->
+    <meta property="og:title" content="Title of the project" />
+    <meta property="og:description" content="" />
+    <meta property="og:type" content="website" />
+    <meta property="og:url" content="https://github.com/PaulleDemon" />
+    <!--Replace with the current website url-->
+    <meta property="og:image" content="" />
+
+    <!-- <link rel="stylesheet" href="../../tailwind-css/tailwind-runtime.css" /> -->
+    <link rel="stylesheet" href="./css/tailwind-build.css" />
+    <link rel="stylesheet" href="css/index.css" />
+
+    <link rel="stylesheet" href="https://fonts.googleapis.com/icon?family=Material+Icons" />
+    <link rel="stylesheet"
+        href="https://cdnjs.cloudflare.com/ajax/libs/bootstrap-icons/1.11.3/font/bootstrap-icons.min.css"
+        integrity="sha512-dPXYcDub/aeb08c63jRq/k6GaKccl256JQy/AnOq7CAnEZ9FzSL9wSbcZkMp4R26vBsMLFYH4kQ67/bbV8XaCQ=="
+        crossorigin="anonymous" referrerpolicy="no-referrer" />
+</head>
+
+<body class="tw-flex tw-min-h-[100vh] tw-flex-col tw-bg-[#fff] tw-font-mono">
+    <header
+        class="tw-absolute tw-top-0 tw-z-20 tw-flex tw-h-[60px] tw-w-full tw-bg-opacity-0 tw-px-[5%] max-lg:tw-mr-auto max-lg:tw-px-4 lg:tw-justify-around">
+        <a class="tw-h-[50px] tw-p-[4px] tw-text-2xl tw-font-medium logo-text" href="">
+            Abdullah
+        </a>
+        <div class="collapsible-header animated-collapse max-lg:tw-shadow-md" id="collapsed-header-items">
+            <div
+                class="tw-flex tw-h-full tw-w-max tw-gap-5 tw-text-base tw-text-black max-lg:tw-mt-[30px] max-lg:tw-flex-col max-lg:tw-place-items-end max-lg:tw-gap-5 lg:tw-mx-auto lg:tw-place-items-center">
+                <a class="header-links" href=""> About Me </a>
+                <a class="header-links" href="#pricing"> Work </a>
+                <a class="header-links" href=""> Blog </a>
+                <a class="header-links" href=""> Contact me </a>
+            </div>
+            <div
+                class="tw-mx-4 tw-flex tw-place-items-center tw-gap-[20px] tw-text-base max-md:tw-w-full max-md:tw-flex-col max-md:tw-place-content-center">
+                <a href="https://tally.so/r/woO0Kx" aria-label="signup"
+                    class="tw-flex tw-h-[40px] tw-place-items-center tw-gap-2 tw-rounded-full tw-bg-black tw-p-1 tw-pl-4 tw-text-white">
+                    <span>Get in touch</span>
+                    <div
+                        class="tw-flex tw-h-[30px] tw-w-[30px] tw-place-content-center tw-place-items-center tw-rounded-full tw-bg-white tw-font-semibold tw-text-black">
+                        <i class="bi bi-arrow-up-right"></i>
+                    </div>
+                </a>
+            </div>
+        </div>
+        <button class="bi bi-list tw-absolute tw-right-3 tw-top-3 tw-z-50 tw-text-3xl tw-text-black lg:tw-hidden"
+            onclick="toggleHeader()" aria-label="menu" id="collapse-btn"></button>
+    </header>
+
+    <section
+        class="tw-relative tw-flex tw-min-h-[100vh] tw-w-full tw-max-w-[100vw] tw-flex-col tw-overflow-hidden max-lg:tw-p-4 max-md:tw-mt-[50px]">
+        <div
+            class="tw-flex tw-h-full tw-min-h-[100vh] tw-w-full tw-place-content-center tw-gap-6 tw-p-[5%] max-xl:tw-place-items-center max-lg:tw-flex-col">
+            <div class="tw-flex tw-flex-col tw-place-content-center">
+                <div
+                    class="tw-flex tw-flex-wrap tw-text-7xl tw-font-semibold tw-uppercase tw-leading-[85px] max-lg:tw-text-4xl max-md:tw-leading-snug">
+                    <span class="reveal-hero-text tw-bg-green-200 tw-p-1 tw-px-6">
+                        Abdullah Hassan
+                    </span>
+                    <br />
+                    <span class="reveal-hero-text">
+                        Full Stack Developer</span>
+                </div>
+                <div class="reveal-hero-text tw-mt-2 tw-max-w-[450px] tw-p-2 tw-text-justify max-lg:tw-max-w-full">
+                    Specialize in developing scalable, enterprise-grade web applications with a strong emphasis on clean
+                    architecture, intuitive user interfaces, and robust back-end systems. Leveraging technologies like
+                    ASP.NET Core, Angular, Django, and Flask, I transform complex requirements into reliable,
+                    high-performance solutions. My work is driven by a commitment to code quality, maintainability, and
+                    delivering real-world impact.
+                </div>
+
+                <div class="reveal-hero-text tw-mt-4 tw-flex tw-place-items-center tw-gap-4 tw-overflow-hidden tw-p-2">
+                    <a href="https://tally.so/r/woO0Kx" aria-label="signup"
+                        class="tw-flex tw-h-[40px] tw-place-items-center tw-gap-2 tw-rounded-full tw-border-[1px] tw-border-solid tw-border-black tw-bg-white tw-p-1 tw-pl-4 tw-text-black tw-transition-colors tw-duration-[0.5s] hover:tw-bg-black hover:tw-text-white">
+                        <span>Get in touch</span>
+                        <div
+                            class="tw-flex tw-h-[30px] tw-w-[30px] tw-place-content-center tw-place-items-center tw-rounded-full tw-bg-black tw-font-semibold tw-text-white">
+                            <i class="bi bi-arrow-up-right"></i>
+                        </div>
+                    </a>
+                </div>
+            </div>
+
+            <div
+                class="tw-flex tw-w-full tw-max-w-[50%] tw-place-content-center tw-place-items-center tw-overflow-hidden max-lg:tw-max-w-[unset]">
+                <div
+                    class="tw-relative tw-flex tw-max-h-[580px] tw-min-h-[450px] tw-min-w-[350px] tw-max-w-[650px] tw-overflow-hidden max-lg:tw-h-fit max-lg:tw-max-h-[320px] max-lg:tw-min-h-[180px] max-lg:tw-w-[320px] max-lg:tw-min-w-[320px]">
+                    <img src="./assets/images/home/abdullah-pic.jpg" alt="app"
+                        class="reveal-hero-img tw-z-[1] tw-h-full tw-w-full tw-object-contain" />
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <section
+        class="tw-relative tw-flex tw-min-h-[100vh] tw-w-full tw-max-w-[100vw] tw-flex-col tw-place-items-center tw-overflow-hidden tw-p-6 tw-py-5">
+        <h3 class="reveal-up tw-text-6xl tw-font-medium max-lg:tw-text-3xl">
+            Past works
+        </h3>
+        <div class="reveal-up tw-my-4 tw-h-[1px] tw-w-[80%] tw-bg-black"></div>
+        <div class="tw-mt-8 tw-gap-10 tw-space-y-8 max-md:tw-columns-1 lg:tw-columns-2 xl:tw-columns-3">
+            <div
+                class="reveal-up tw-flex tw-h-fit tw-w-[450px] tw-break-inside-avoid tw-flex-col tw-gap-2 tw-rounded-lg tw-bg-[#f3f3f3b4] tw-p-4 tw-shadow-lg max-lg:tw-w-full max-lg:tw-max-w-[400px]">
+                <div class="tw-flex tw-place-items-center tw-gap-3">
+                    <div class="tw-h-[300px] tw-w-full tw-overflow-hidden tw-rounded-lg" style="background: oldlace;">
+                        <img src="./assets/images/home/merchant.png" class="tw-h-full tw-w-full tw-object-contain"
+                            alt="merchant" />
+                    </div>
+                </div>
+                <div class="tw-flex tw-flex-col tw-gap-2">
+                    <h3 class="tw-text-xl tw-font-medium">Merchant Onboarding</h3>
+                    <p class="tw-text-gray-600">
+                        Played a key role in Inter-pay Ghana’s merchant onboarding module. Led a team of 3 developers,
+                        building back-end APIs with ASP.NET Core Web API and front-end interfaces in Angular to
+                        streamline the onboarding process.
+                    </p>
+                    <a href="https://mchnt-onbd-uat.cspay.app:9383/landing" class="tw-mt-4">
+                        <span>Learn more</span>
+                        <i class="bi bi-arrow-right"></i>
+                    </a>
+                </div>
+            </div>
+
+            <div
+                class="reveal-up tw-flex tw-h-fit tw-w-[450px] tw-break-inside-avoid tw-flex-col tw-gap-2 tw-rounded-lg tw-bg-[#f3f3f3b4] tw-p-4 tw-shadow-lg max-lg:tw-w-full max-lg:tw-max-w-[400px]">
+                <div class="tw-flex tw-place-items-center tw-gap-3">
+                    <div class="tw-h-[300px] tw-w-full tw-overflow-hidden tw-rounded-lg" style="background: oldlace;">
+                        <img src="./assets/images/home/mojo.png" class="tw-h-full tw-w-full tw-object-contain"
+                            alt="design" />
+                    </div>
+                </div>
+                <div class="tw-flex tw-flex-col tw-gap-2">
+                    <h3 class="tw-text-xl tw-font-medium">Mojo Pay</h3>
+                    <p class="tw-text-gray-600">
+                        A SaaS billing system for organizations in Ghana. Contributed to core feature development using
+                        ASP.NET Core, Angular, andOracle. Worked on billing API s, recurring billing, email
+                        notifications, reporting modules, and wrote stored procedures for back-endlogic.
+                    </p>
+                    <a href="https://bills.mojo-pay.com/landing" class="tw-mt-4">
+                        <span>Learn more</span>
+                        <i class="bi bi-arrow-right"></i>
+                    </a>
+                </div>
+            </div>
+
+            <div
+                class="reveal-up tw-flex tw-h-fit tw-w-[450px] tw-break-inside-avoid tw-flex-col tw-gap-2 tw-rounded-lg tw-bg-[#f3f3f3b4] tw-p-4 tw-shadow-lg max-lg:tw-w-full max-lg:tw-max-w-[400px]">
+                <div class="tw-flex tw-place-items-center tw-gap-3">
+                    <div class="tw-h-[300px] tw-w-full tw-overflow-hidden tw-rounded-lg" style="background: oldlace;">
+                        <img src="./assets/images/home/nutricare.png" class="tw-h-full tw-w-full tw-object-contain"
+                            alt="design" />
+                    </div>
+                </div>
+                <div class="tw-flex tw-flex-col tw-gap-2">
+                    <h3 class="tw-text-xl tw-font-medium">Nutricare Ai</h3>
+                    <p class="tw-text-gray-600">
+                        Developed a personalized nutritional web app using Django, MySQL, and an LLM-based chat-bot for
+                        accurate responses. Keyfeatures include online consultations, a supplement store, custom diet
+                        plans, and a food nutrients checker
+                    </p>
+                    <a href="https://github.com/abdullah12-alt/NutriCareAi-FYP" class="tw-mt-4">
+                        <span>Learn more</span>
+                        <i class="bi bi-arrow-right"></i>
+                    </a>
+                </div>
+            </div>
+            <div
+                class="reveal-up tw-flex tw-h-fit tw-w-[450px] tw-break-inside-avoid tw-flex-col tw-gap-2 tw-rounded-lg tw-bg-[#f3f3f3b4] tw-p-4 tw-shadow-lg max-lg:tw-w-full max-lg:tw-max-w-[400px]">
+                <div class="tw-flex tw-place-items-center tw-gap-3">
+                    <div class="tw-h-[300px] tw-w-full tw-overflow-hidden tw-rounded-lg" style="background: oldlace;">
+                        <img src="./assets/images/home/hamza-halal.png" class="tw-h-full tw-w-full tw-object-contain"
+                            alt="design" />
+                    </div>
+                </div>
+                <div class="tw-flex tw-flex-col tw-gap-2">
+                    <h3 class="tw-text-xl tw-font-medium">Hamza Halal Meet</h3>
+                    <p class="tw-text-gray-600">
+                        Hamza Halal Meat is one of the top halal meat stores in London, UK.
+                        I developed its full e-commerce platform, integrating card and Visa payment methods.
+                        The platform handles over 1,000 daily orders across London and surrounding areas.
+                    </p>
+                    <a href="https://www.humzahalal.co.uk" class="tw-mt-4">
+                        <span>Learn more</span>
+                        <i class="bi bi-arrow-right"></i>
+                    </a>
+                </div>
+            </div>
+
+            <div
+                class="reveal-up tw-flex tw-h-fit tw-w-[450px] tw-break-inside-avoid tw-flex-col tw-gap-2 tw-rounded-lg tw-bg-[#f3f3f3b4] tw-p-4 tw-shadow-lg max-lg:tw-w-full max-lg:tw-max-w-[400px]">
+                <div class="tw-flex tw-place-items-center tw-gap-3">
+                    <div class="tw-h-[300px] tw-w-full tw-overflow-hidden tw-rounded-lg">
+                        <img src="./assets/images/home/mountain.jpg" class="tw-h-full tw-w-full tw-object-cover"
+                            alt="design" />
+                    </div>
+                </div>
+                <div class="tw-flex tw-flex-col tw-gap-2">
+                    <h3 class="tw-text-xl tw-font-medium">Google</h3>
+                    <p class="tw-text-gray-600">
+                        Lorem ipsum dolor, sit amet consectetur adipisicing
+                        elit. Velit, voluptates.
+                    </p>
+                    <a href="http://" class="tw-mt-4">
+                        <span>Learn more</span>
+                        <i class="bi bi-arrow-right"></i>
+                    </a>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <section
+        class="tw-relative tw-mt-10 tw-flex tw-min-h-[100vh] tw-w-full tw-max-w-[100vw] tw-flex-col tw-place-content-center tw-place-items-center lg:tw-p-6">
+        <div
+            class="tw-flex tw-h-full tw-w-full tw-justify-around tw-gap-8 tw-rounded-xl tw-bg-[#e7e6e685] tw-p-4 max-lg:tw-max-w-full max-lg:tw-flex-col">
+            <div
+                class="reveal-up tw-flex tw-h-full tw-w-[50%] tw-place-content-center max-lg:tw-w-full lg:tw-sticky lg:tw-top-[20%]">
+                <h3 class="tw-text-center tw-text-6xl tw-font-medium max-lg:tw-text-3xl">
+                    What my colleagues say
+                </h3>
+            </div>
+
+            <div
+                class="reveal-up tw-flex tw-w-[30%] tw-flex-col tw-place-items-center tw-gap-4 tw-p-2 max-lg:tw-w-full">
+                <div
+                    class="tw-flex tw-h-fit tw-w-full tw-flex-col tw-gap-4 tw-border-2 tw-border-black tw-bg-white tw-p-4">
+                    <div class="tw-flex tw-w-full tw-place-items-center tw-gap-4 tw-p-2">
+                        <div class="tw-flex tw-h-[60px] tw-w-[60px] tw-overflow-hidden tw-rounded-full">
+                            <img src="./assets/images/people/abid.jpg" alt="abid"
+                                class="tw-h-full tw-w-full tw-object-cover" />
+                        </div>
+
+                        <div>
+                            <p class="tw-text-xl tw-font-semibold">SYED ABID ALI</p>
+                            <p class="tw-text-lg tw-text-gray-600">
+                                Senior Product manager, Fintechtik
+                            </p>
+                        </div>
+                    </div>
+                    <div class="tw-text-justify tw-text-gray-800">
+                        Abdullah Hassan is a dedicated and enthusiastic professional who brings a positive attitude and
+                        a strong willingness to learn.
+                        He’s always curious, eager to take initiative, and interacts with the team in a friendly and
+                        respectful manner. His proactive mindset and professionalism make him a great team player. I’m
+                        confident he has a bright future ahead and will add value wherever he goes. Highly recommended!
+
+                    </div>
+                </div>
+
+                <div
+                    class="tw-flex tw-h-fit tw-w-full tw-flex-col tw-gap-4 tw-border-2 tw-border-black tw-bg-white tw-p-4">
+                    <div class="tw-flex tw-w-full tw-place-items-center tw-gap-4 tw-p-2">
+                        <div class="tw-flex tw-h-[60px] tw-w-[60px] tw-overflow-hidden tw-rounded-full">
+                            <img src="./assets/images/people/irfan.jpg" alt="irfan"
+                                class="tw-h-full tw-w-full tw-object-cover" />
+                        </div>
+
+                        <div>
+                            <p class="tw-text-xl tw-font-semibold">Muhammad Irfan Khan</p>
+                            <p class="tw-text-lg tw-text-gray-600">
+                                Tech Lead, Fintechtik
+                            </p>
+                        </div>
+                    </div>
+                    <div class="tw-text-justify tw-text-gray-800">
+                        I had the pleasure of collaborating with Abdullah at Fintechtik for over 1.5 years, and his
+                        technical prowess and dedication left a lasting impression. As a full-stack developer, he
+                        excelled in designing scalable APIs with ASP.NET Core and crafting intuitive frontends using
+                        Angular.
+                        His code was consistently clean, well-documented, and optimized for performance-key traits that
+                        elevated our fintech solutions.
+                        Beyond his technical skills,
+                        Abdullah stood out for his problem-solving mindset. Whether debugging a critical issue or
+                        brainstorming architecture improvements, he approached challenges with a calm, analytical
+                        demeanor. His willingness to mentor juniors (often during crunch times!) reflected his
+                        leadership potential.
+                        What truly sets Abdullah apart is his continuous learning ethic. Any organization would gain a
+                        reliable, innovative, and collaborative engineer with him on board.
+                    </div>
+                </div>
+
+                <div
+                    class="tw-flex tw-h-fit tw-w-full tw-flex-col tw-gap-4 tw-border-2 tw-border-black tw-bg-white tw-p-4">
+                    <div class="tw-flex tw-w-full tw-place-items-center tw-gap-4 tw-p-2">
+                        <div class="tw-flex tw-h-[60px] tw-w-[60px] tw-overflow-hidden tw-rounded-full">
+                            <img src="./assets/images/people/minhaj.jpg" alt="minhaj"
+                                class="tw-h-full tw-w-full tw-object-cover" />
+                        </div>
+
+                        <div>
+                            <p class="tw-text-xl tw-font-semibold">Minhaj Hussain</p>
+                            <p class="tw-text-lg tw-text-gray-600">
+                                Senior Backend Developer, Fintechtik
+                            </p>
+                        </div>
+                    </div>
+                    <div class="tw-text-justify tw-text-gray-800">
+                        It is with great confidence that I recommend Abdullah Hassan, a highly skilled and dependable
+                        full-stack developer with strong expertise in both .NET backend development and Angular frontend
+                        technologies.
+
+                        Abdullah possesses deep knowledge of the .NET ecosystem, including C#, ASP.NET Core, Entity
+                        Framework, and RESTful API design. On the frontend, he excels with Angular, crafting clean,
+                        responsive, and efficient user interfaces while maintaining strong code quality and performance
+                        optimization. His ability to bridge backend logic with intuitive, dynamic front-end experiences
+                        makes him a standout full-stack developer.
+
+                        I wholeheartedly recommend Abdullah Hassan for any position requiring expertise in .NET and
+                        Angular. His combination of technical skills, professionalism, and proactive attitude ensures he
+                        will make a positive and lasting impact wherever he works.
+                    </div>
+                </div>
+
+                <div
+                    class="tw-flex tw-h-fit tw-w-full tw-flex-col tw-gap-4 tw-border-2 tw-border-black tw-bg-white tw-p-4">
+                    <div class="tw-flex tw-w-full tw-place-items-center tw-gap-4 tw-p-2">
+                        <div class="tw-flex tw-h-[60px] tw-w-[60px] tw-overflow-hidden tw-rounded-full">
+                            <img src="./assets/images/people/hasnain.jpg" alt="hasnain"
+                                class="tw-h-full tw-w-full tw-object-cover" />
+                        </div>
+
+                        <div>
+                            <p class="tw-text-xl tw-font-semibold">Muhammad Hasnain Sajid</p>
+                            <p class="tw-text-lg tw-text-gray-600">
+                                Software Engineer, Fintechtik
+                            </p>
+                        </div>
+                    </div>
+                    <div class="tw-text-justify tw-text-gray-800">
+                        I had the pleasure of working alongside Abdullah, and he’s genuinely one of the best problem
+                        solvers I’ve met. He has a natural ability to break down complex issues and find smart,
+                        practical solutions often under pressure.
+                        Beyond his technical strengths, Abdullah brings a steady, positive energy to the team. He’s
+                        thoughtful in his approach, quick to support others, and always focused on getting the best
+                        outcome for everyone involved.
+
+
+                    </div>
+                </div>
+
+                <div
+                    class="tw-flex tw-h-fit tw-w-full tw-flex-col tw-gap-4 tw-border-2 tw-border-black tw-bg-white tw-p-4">
+                    <div class="tw-flex tw-w-full tw-place-items-center tw-gap-4 tw-p-2">
+                        <div class="tw-flex tw-h-[60px] tw-w-[60px] tw-overflow-hidden tw-rounded-full">
+                            <img src="./assets/images/people/burhan.png" alt="burhan"
+                                class="tw-h-full tw-w-full tw-object-cover" />
+                        </div>
+
+                        <div>
+                            <p class="tw-text-xl tw-font-semibold">Muhammad Burhan</p>
+                            <p class="tw-text-lg tw-text-gray-600">
+                                Software Engineer, Minhaj
+                            </p>
+                        </div>
+                    </div>
+                    <div class="tw-text-justify tw-text-gray-800">
+                        Abdullah is a dedicated and skilled software engineer with a passion for backend development.
+                        Throughout our collaboration, I was continually impressed by his technical expertise and
+                        problem-solving abilities. He consistently demonstrated a strong understanding of software
+                        engineering principles and was able to apply them effectively to our projects.
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <section
+        class="tw-relative tw-flex tw-min-h-[80vh] tw-w-full tw-max-w-[100vw] tw-flex-col tw-place-content-center tw-place-items-center tw-overflow-hidden tw-p-6"
+        id="">
+        <div class="tw-mt-8 tw-flex tw-flex-col tw-place-items-center tw-gap-5">
+            <div class="reveal-up tw-mt-5 tw-flex tw-flex-col tw-gap-3 tw-text-center">
+                <h2 class="tw-text-4xl tw-font-semibold">
+                    Work with an expert
+                </h2>
+            </div>
+            <div
+                class="tw-mt-6 tw-flex tw-max-w-[60%] tw-flex-wrap tw-place-content-center tw-gap-2 max-lg:tw-flex-col">
+                <div class="reveal-up tw-flex tw-h-[150px] tw-w-[350px] tw-flex-col tw-gap-2 tw-p-4">
+                    <!-- <img src="./assets/images/home/sample.jpg" 
+                                alt="feature1"> -->
+                    <div class="tw-flex tw-gap-1">
+                        <i class="bi bi-boombox-fill tw-text-2xl"></i>
+                        <h3 class="tw-text-2xl tw-font-semibold">
+                            Frontend developer
+                        </h3>
+                    </div>
+                    <div class="tw-text-[#595959]">
+                        Lorem ipsum dolor sit amet, consectetur adipisicing
+                        elit.
+                    </div>
+                </div>
+                <div class="reveal-up tw-flex tw-h-[150px] tw-w-[350px] tw-flex-col tw-gap-2 tw-p-4">
+                    <!-- <img src="./assets/images/home/sample.jpg" 
+                                alt="feature1"> -->
+                    <div class="tw-flex tw-gap-1">
+                        <i class="bi bi-0-circle-fill tw-text-2xl"></i>
+                        <h3 class="tw-text-2xl tw-font-semibold">
+                            ML & AI
+                        </h3>
+                    </div>
+                    <div class="tw-text-[#595959]">
+                        Lorem ipsum dolor sit amet, consectetur adipisicing
+                        elit.
+                    </div>
+                </div>
+                <div class="reveal-up tw-flex tw-h-[150px] tw-w-[350px] tw-flex-col tw-gap-2 tw-p-4">
+                    <!-- <img src="./assets/images/home/sample.jpg" 
+                                alt="feature1"> -->
+                    <div class="tw-flex tw-gap-1">
+                        <i class="bi bi-0-square-fill tw-text-2xl"></i>
+                        <h3 class="tw-text-2xl tw-font-semibold">
+                            Backend developer
+                        </h3>
+                    </div>
+                    <div class="tw-text-[#595959]">
+                        Lorem ipsum dolor sit amet, consectetur adipisicing
+                        elit.
+                    </div>
+                </div>
+                <div class="reveal-up tw-flex tw-h-[150px] tw-w-[350px] tw-flex-col tw-gap-2 tw-p-4">
+                    <!-- <img src="./assets/images/home/sample.jpg" 
+                                alt="feature1"> -->
+                    <div class="tw-flex tw-gap-1">
+                        <i class="bi bi-database-fill tw-text-2xl"></i>
+                        <h3 class="tw-text-2xl tw-font-semibold">
+                            Database
+                        </h3>
+                    </div>
+                    <div class="tw-text-[#595959]">
+                        Lorem ipsum dolor sit amet, consectetur adipisicing
+                        elit.
+                    </div>
+                </div>
+                <div class="reveal-up tw-flex tw-h-[150px] tw-w-[350px] tw-flex-col tw-gap-2 tw-p-4">
+                    <!-- <img src="./assets/images/home/sample.jpg" 
+                                alt="feature1"> -->
+                    <div class="tw-flex tw-gap-1">
+                        <i class="bi bi-cake-fill tw-text-2xl"></i>
+                        <h3 class="tw-text-2xl tw-font-semibold">Redis</h3>
+                    </div>
+                    <div class="tw-text-[#595959]">
+                        Lorem ipsum dolor sit amet, consectetur adipisicing
+                        elit.
+                    </div>
+                </div>
+                <div class="reveal-up tw-flex tw-h-[150px] tw-w-[350px] tw-flex-col tw-gap-2 tw-p-4">
+                    <!-- <img src="./assets/images/home/sample.jpg" 
+                                alt="feature1"> -->
+                    <div class="tw-flex tw-gap-1">
+                        <i class="bi bi-shield-fill tw-text-2xl"></i>
+                        <h3 class="tw-text-2xl tw-font-semibold">Figma</h3>
+                    </div>
+                    <div class="tw-text-[#595959]">
+                        Lorem ipsum dolor sit amet, consectetur adipisicing
+                        elit.
+                    </div>
+                </div>
+            </div>
+
+            <a href="https://tally.so/r/woO0Kx" aria-label="signup"
+                class="reveal-up tw-flex tw-h-[40px] tw-place-items-center tw-gap-2 tw-rounded-full tw-bg-black tw-p-1 tw-pl-4 tw-text-white">
+                <span>Get in touch</span>
+                <div
+                    class="tw-flex tw-h-[30px] tw-w-[30px] tw-place-content-center tw-place-items-center tw-rounded-full tw-bg-white tw-font-semibold tw-text-black">
+                    <i class="bi bi-arrow-up-right"></i>
+                </div>
+            </a>
+        </div>
+    </section>
+
+    <section class="tw-mt-5 tw-flex tw-w-full tw-flex-col tw-place-items-center tw-p-[2%] max-lg:tw-p-3">
+        <h3 class="reveal-up tw-text-center tw-text-4xl tw-font-medium max-md:tw-text-2xl">
+            Read my articles for more insights ✨
+        </h3>
+        <!-- pricing -->
+        <div class="reveal-up tw-mt-10 tw-flex tw-flex-wrap tw-place-content-center tw-gap-10 max-lg:tw-flex-col">
+            <a href=""
+                class="tw-flex tw-h-[400px] tw-w-[350px] tw-flex-col tw-gap-2 tw-overflow-clip tw-rounded-lg tw-bg-[#edecec79] tw-p-4 tw-shadow-xl max-lg:tw-w-[300px]">
+                <div class="tw-h-[200px] tw-w-full tw-overflow-hidden tw-rounded-md">
+                    <img src="./assets/images/home/forest.jpg" alt="article image"
+                        class="tw-h-full tw-w-full tw-object-cover" srcset="" />
+                </div>
+                <h3 class="tw-text-2xl tw-font-semibold max-md:tw-text-xl">
+                    Article 1
+                </h3>
+                <p class="tw-mt-2 tw-text-gray-600">
+                    Lorem ipsum dolor sit amet consectetur adipisicing elit.
+                    Ab, explicabo!
+                </p>
+                <span>
+                    <span>Learn more</span>
+                    <i class="bi bi-arrow-right"></i>
+                </span>
+            </a>
+            <a href=""
+                class="tw-flex tw-h-[400px] tw-w-[350px] tw-flex-col tw-gap-2 tw-overflow-clip tw-rounded-lg tw-bg-[#edecec79] tw-p-4 tw-shadow-xl max-lg:tw-w-[300px]">
+                <div class="tw-h-[200px] tw-w-full tw-overflow-hidden tw-rounded-md">
+                    <img src="./assets/images/home/mountain.jpg" alt="article image"
+                        class="tw-h-full tw-w-full tw-object-cover" srcset="" />
+                </div>
+                <h3 class="tw-text-2xl tw-font-semibold max-md:tw-text-xl">
+                    Article 2
+                </h3>
+                <p class="tw-mt-2 tw-text-gray-600">
+                    Lorem ipsum dolor sit amet consectetur adipisicing elit.
+                    Ab, explicabo!
+                </p>
+                <span>
+                    <span>Learn more</span>
+                    <i class="bi bi-arrow-right"></i>
+                </span>
+            </a>
+            <a href=""
+                class="tw-flex tw-h-[400px] tw-w-[350px] tw-flex-col tw-gap-2 tw-overflow-clip tw-rounded-lg tw-bg-[#edecec79] tw-p-4 tw-shadow-xl max-lg:tw-w-[300px]">
+                <div class="tw-h-[200px] tw-w-full tw-overflow-hidden tw-rounded-md">
+                    <img src="./assets/images/home/photography.jpg" alt="article image"
+                        class="tw-h-full tw-w-full tw-object-cover" srcset="" />
+                </div>
+                <h3 class="tw-text-2xl tw-font-semibold max-md:tw-text-xl">
+                    Article 3
+                </h3>
+                <p class="tw-mt-2 tw-text-gray-600">
+                    Lorem ipsum dolor sit amet consectetur adipisicing elit.
+                    Ab, explicabo!
+                </p>
+                <span>
+                    <span>Learn more</span>
+                    <i class="bi bi-arrow-right"></i>
+                </span>
+            </a>
+        </div>
+    </section>
+
+    <hr class="tw-mt-4" />
+
+    <footer
+        class="tw-mt-auto tw-flex tw-min-h-[100px] tw-w-full tw-place-content-around tw-place-items-center tw-gap-3 tw-p-[2%] tw-px-[10%] tw-text-black max-md:tw-flex-col">
+        <div class="tw-flex tw-gap-6 tw-text-2xl">
+            <a href="" aria-label="Github">
+                <i class="bi bi-github"></i>
+            </a>
+            <a href="https://twitter.com/@pauls_freeman" aria-label="Twitter">
+                <i class="bi bi-twitter"></i>
+            </a>
+            <a href="https://stackoverflow.com/" class="tw-h-[40px] tw-w-[40px]" aria-label="stackoverflow">
+                <i class="bi bi-stack-overflow"></i>
+            </a>
+        </div>
+    </footer>
+</body>
+
+<script src="https://cdnjs.cloudflare.com/ajax/libs/gsap/3.12.0/gsap.min.js"
+    integrity="sha512-B1lby8cGcAUU3GR+Fd809/ZxgHbfwJMp0jLTVfHiArTuUt++VqSlJpaJvhNtRf3NERaxDNmmxkdx2o+aHd4bvw=="
+    crossorigin="anonymous" referrerpolicy="no-referrer"></script>
+<script src="https://cdnjs.cloudflare.com/ajax/libs/gsap/3.12.0/ScrollTrigger.min.js"
+    integrity="sha512-AY2+JxnBETJ0wcXnLPCcZJIJx0eimyhz3OJ55k2Jx4RtYC+XdIi2VtJQ+tP3BaTst4otlGG1TtPJ9fKrAUnRdQ=="
+    crossorigin="anonymous" referrerpolicy="no-referrer"></script>
+
+<script src="./index.js"></script>
+
+</html>
