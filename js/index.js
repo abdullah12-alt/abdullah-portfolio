@@ -122,3 +122,31 @@ sections.forEach((sec) => {
 
 
 
+// for blogs section
+
+document.addEventListener("DOMContentLoaded", () => {
+  const container = document.getElementById("latest-blogs");
+
+  if (!container || !window.blogs) return;
+
+  for (let i = 0; i < Math.min(3, blogs.length); i++) {
+    const blog = blogs[i];
+
+    const card = `
+      <a href="${blog.link}"
+         class="tw-flex tw-h-[400px] tw-w-[350px] tw-flex-col tw-gap-2 tw-overflow-clip tw-rounded-lg tw-bg-[#edecec79] tw-p-4 tw-shadow-xl max-lg:tw-w-[300px]">
+        <div class="tw-h-[200px] tw-w-full tw-overflow-hidden tw-rounded-md">
+          <img src="${blog.image}" alt="${blog.title}" class="tw-h-full tw-w-full tw-object-cover" />
+        </div>
+        <h3 class="tw-text-2xl tw-font-semibold max-md:tw-text-xl">${blog.title}</h3>
+        <p class="tw-mt-2 tw-text-gray-600">${blog.description}</p>
+        <span>
+          <span>Learn more</span>
+          <i class="bi bi-arrow-right"></i>
+        </span>
+      </a>
+    `;
+
+    container.innerHTML += card;
+  }
+});
