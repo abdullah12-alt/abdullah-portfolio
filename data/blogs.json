@@ -1,0 +1,50 @@
+[
+    {
+        "title": "Mastering Docker: Core Concepts and Best Practices for Modern Apps",
+        "excerpt": "A deep dive into Docker core concepts, explaining containers, images, and best practices for building scalable modern applications.",
+        "date": "Feb 15, 2026",
+        "readTime": "12 min read",
+        "image": "blogs/docker.png",
+        "link": "https://medium.com/@abdullahhassancode/mastering-docker-core-concepts-and-best-practices-for-modern-apps-bd278d8aa311"
+    },
+    {
+        "title": "Let’s Deep Dive into Clean Architecture: A Comprehensive Guide",
+        "excerpt": "Exploring the principles of Clean Architecture to create maintainable, testable, and independent software systems.",
+        "date": "Feb 10, 2026",
+        "readTime": "15 min read",
+        "image": "blogs/Clean Architecture.png",
+        "link": "https://medium.com/@abdullahhassancode/lets-deep-dive-into-clean-architecture-a-comprehensive-guide-to-software-design-principles-e330f2acbdd6"
+    },
+    {
+        "title": "Navigating the Development Lifecycle: Management and Teamwork",
+        "excerpt": "A journey through the SDLC, focusing on effective management strategies and the importance of teamwork in software development.",
+        "date": "Feb 5, 2026",
+        "readTime": "10 min read",
+        "image": "blogs/Software Development Lifecycle.png",
+        "link": "https://medium.com/@abdullahhassancode/navigating-the-development-lifecycle-a-journey-of-management-and-teamwork-5f4f393f8966"
+    },
+    {
+        "title": "The Marvels of Generative AI: Simple Guide to LLM in Healthcare",
+        "excerpt": "Understanding how Generative AI and Large Language Models are transforming healthcare diagnostics and patient care.",
+        "date": "Jan 28, 2026",
+        "readTime": "14 min read",
+        "image": "blogs/healthcare.png",
+        "link": "https://medium.com/@abdullahhassancode/the-marvels-of-generative-ai-a-simple-guide-to-llm-models-in-healthcare-c32da1ceb881"
+    },
+    {
+        "title": "Microservices Architecture: How Netflix, Amazon Build at Scale",
+        "excerpt": "Learn how industry giants use Microservices architecture to handle massive scale and maintain high availability.",
+        "date": "Jan 15, 2026",
+        "readTime": "18 min read",
+        "image": "blogs/microservice.png",
+        "link": "https://medium.com/@abdullahhassancode/microservices-architecture-how-netflix-amazon-and-spotify-build-at-scale-4df0b1c1283e"
+    },
+    {
+        "title": "Let’s Dive Deeper into Manage.py and Migrations in Django",
+        "excerpt": "A detailed technical guide on mastering Django management commands and handling complex database migrations.",
+        "date": "Jan 5, 2026",
+        "readTime": "11 min read",
+        "image": "blogs/Let’s Dive Deeper into Manage.py and Migration Commands in Django.png",
+        "link": "https://medium.com/@abdullahhassancode/lets-dive-deeper-into-manage-py-and-migration-commands-in-django-b29170661d5d"
+    }
+]

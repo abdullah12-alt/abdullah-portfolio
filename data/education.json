@@ -1,0 +1,16 @@
+[
+    {
+        "degree": "Bachelor of Science in Computer Science",
+        "institution": "Minhaj University Lahore",
+        "logo": "uni/Minhaj-University-Lahore.png",
+        "year": "2019 - 2023",
+        "description": "Graduated with CGPA 3.46/4.0. Gained strong foundation in software engineering, algorithms, data structures, and database systems. Participated in programming competitions and won multiple awards."
+    },
+    {
+        "degree": "Business Formation, Entrepreneurship/Entrepreneurial Studies",
+        "institution": "The University of Lahore (UOL)",
+        "logo": "uni/uol.jpg",
+        "year": "2025",
+        "description": "Gained practical knowledge in entrepreneurship and business management, including idea validation, vision and mission development, team building, legal compliance, product-market fit, marketing strategies, financial monitoring, growth marketing, internationalization, governance, and driving innovation."
+    }
+]

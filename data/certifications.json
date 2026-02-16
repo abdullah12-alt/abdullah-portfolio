@@ -1,0 +1,32 @@
+[
+    {
+        "title": "Microsoft Back-End Developer Professional Certificate",
+        "issuer": "Microsoft",
+        "date": "2024",
+        "icon": "bx bxs-badge-check"
+    },
+    {
+        "title": "Back-end Development",
+        "issuer": "Nexskills",
+        "date": "2023",
+        "icon": "bx bx-code-block"
+    },
+    {
+        "title": "Google Python Crash Course",
+        "issuer": "Google",
+        "date": "2023",
+        "icon": "bx bxl-python"
+    },
+    {
+        "title": "Vibe Coding with Cursor AI",
+        "issuer": "Cursor AI",
+        "date": "2024",
+        "icon": "bx bx-bot"
+    },
+    {
+        "title": "Linux Essential",
+        "issuer": "Cisco",
+        "date": "2023",
+        "icon": "bx bxl-tux"
+    }
+]

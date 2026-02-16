@@ -1,0 +1,79 @@
+[
+    {
+        "title": "MojoBills",
+        "description": "SaaS billing platform for Ghana organizations. Developed billing APIs, recurring payment logic, email notifications, and reporting modules using ASP.NET Core, Angular, ADO.NET, and Oracle with optimized stored procedures.",
+        "image": "projects/mojo-pay.png",
+        "link": "https://github.com/abdullah12-alt",
+        "tags": [
+            "ASP.NET Core",
+            "Angular",
+            "Oracle",
+            "ADO.NET",
+            "SaaS"
+        ]
+    },
+    {
+        "title": "Merchant On-boarding",
+        "description": "Led team of 3 developers to build merchant on-boarding module for Inter-pay Ghana. Developed RESTful APIs using ASP.NET Core and Angular frontend, streamlining merchant activation process for Ghana's digital payment ecosystem.",
+        "image": "projects/merchant-oboarding.png",
+        "link": "https://github.com/abdullah12-alt",
+        "tags": [
+            "ASP.NET Core",
+            "Angular",
+            "RESTful API",
+            "Team Leadership"
+        ]
+    },
+    {
+        "title": "LeadGenHelper",
+        "description": "Developed AI-driven proposal automation platform integrating OpenAI GPT, RAG pipeline, and Upwork API. Implemented user authentication, RBAC, job feed parsing, and intelligent cover letter generation reducing job application time by 70% and client-sales team communication time by 50%.",
+        "image": "projects/leadgen.png",
+        "link": "https://github.com/abdullah12-alt",
+        "tags": [
+            "OpenAI GPT",
+            "RAG",
+            "Python",
+            "AI/ML",
+            "Automation"
+        ]
+    },
+    {
+        "title": "NutriCare",
+        "description": "Built full-stack nutrition platform using Django, MySQL, and LLM integration. Implemented AI chatbot for dietary guidance, online consultation booking, e-commerce module for supplements, personalized diet plans, and food nutrient checker.",
+        "image": "projects/nutricare.png",
+        "link": "https://github.com/abdullah12-alt",
+        "tags": [
+            "Django",
+            "MySQL",
+            "LLM",
+            "AI Chatbot",
+            "E-commerce"
+        ]
+    },
+    {
+        "title": "Healthcare Billing Application",
+        "description": "Production-grade healthcare billing system processing 1,000s of patient payment transactions daily with 99.9% uptime. Integrated with Mirth Connect and HL7 DFT for healthcare data workflows, featuring custom SSRS reports.",
+        "image": "https://images.unsplash.com/photo-1576091160399-112ba8d25d1d?w=800&h=600&fit=crop",
+        "link": "https://github.com/abdullah12-alt",
+        "tags": [
+            "ASP.NET Core",
+            "Dapper",
+            "Azure",
+            "HL7",
+            "SSRS"
+        ]
+    },
+    {
+        "title": "Fintech Platform - UK & Ghana",
+        "description": "Multi-region fintech platform serving UK and Ghana markets, processing 10,000+ daily bill generations and member invitations. Reduced critical production issues by 40% through rigorous testing and code optimization.",
+        "image": "https://images.unsplash.com/photo-1563013544-824ae1b704d3?w=800&h=600&fit=crop",
+        "link": "https://github.com/abdullah12-alt",
+        "tags": [
+            "ASP.NET Core",
+            "Angular",
+            "Oracle",
+            "AWS",
+            "Fintech"
+        ]
+    }
+]
