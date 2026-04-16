@@ -1,0 +1,42 @@
+[
+  {
+    "id": "healthcare-billing",
+    "title": "Healthcare Billing System",
+    "icon": "fas fa-file-invoice-dollar",
+    "color": "linear-gradient(135deg, #2c3e50 0%, #000000 100%)",
+    "problem": "A US-based healthcare client needed a billing infrastructure that could process high volumes of patient payment transactions daily — with zero tolerance for downtime or data errors, and full HL7 healthcare data standard compliance.",
+    "built": "A production-grade RESTful billing API using ASP.NET Core, Dapper, and MS SQL Server, deployed on Azure. Integrated HL7 DFT interfaces via Mirth Connect for seamless healthcare data exchange. Built custom SSRS reports for stakeholder visibility and implemented CI/CD pipelines for zero-downtime deployments.",
+    "result": "10,000+ daily patient transactions processed · 99.9% uptime · Sub-second response times · 100% sprint delivery across all milestones",
+    "tags": ["ASP.NET Core", "Dapper", "Azure", "HL7", "Mirth Connect"]
+  },
+  {
+    "id": "fintech-platform",
+    "title": "Fintech Platform for African Markets",
+    "icon": "fas fa-globe-africa",
+    "color": "linear-gradient(135deg, #434343 0%, #000000 100%)",
+    "problem": "A fintech company needed secure, scalable backend systems to power financial operations across multiple African markets — including merchant onboarding, mobile-first USSD billing flows, and pension fund management, all under strict compliance requirements.",
+    "built": "Full-stack enterprise platform using ASP.NET Core APIs and Angular frontend with Oracle PL/SQL backend. Built automated merchant onboarding workflows with email notifications and background job processing via Hangfire. Developed USSD flows for mobile-first accessibility and configurable business rule engines for dynamic enterprise requirements.",
+    "result": "Thousands of merchant applications processed automatically · Background jobs eliminated manual intervention · Platform live across multiple African markets",
+    "tags": ["ASP.NET Core", "Angular", "Oracle PL/SQL", "Hangfire"]
+  },
+  {
+    "id": "nutrition-platform",
+    "title": "AI-Powered Nutrition Platform (MVP)",
+    "icon": "fas fa-robot",
+    "color": "linear-gradient(135deg, #232526 0%, #414345 100%)",
+    "problem": "A healthtech startup needed an MVP that connected dietitians and patients for personalized nutrition services — with intelligent AI features that could generate diet recommendations, not just static content.",
+    "built": "Full-stack web platform with Django backend, LangChain + Gemini AI integration for intelligent diet planning, and a responsive JavaScript/Tailwind CSS frontend. Delivered as a working MVP combining AI-powered recommendations with real-time dietitian consultations.",
+    "result": "Working MVP delivered end-to-end · AI diet planning integrated with LangChain + Gemini · Real-time consultation system live",
+    "tags": ["Django", "LangChain", "Gemini AI", "Tailwind CSS"]
+  },
+  {
+    "id": "legacy-modernization",
+    "title": "Legacy System Modernization",
+    "icon": "fas fa-rocket",
+    "color": "linear-gradient(135deg, #0f2027 0%, #203a43 100%, #2c5364 100%)",
+    "problem": "Enterprises running aging .NET Framework systems faced growing performance bottlenecks, rising maintenance costs, and inability to scale — but needed migration without breaking existing functionality.",
+    "built": "Systematic migration of legacy .NET applications to .NET Core with cloud-native architecture on Azure/AWS. Rebuilt CI/CD pipelines for automated deployments, optimized database queries and stored procedures, and introduced unit testing frameworks for long-term maintainability.",
+    "result": "Significant performance improvement post-migration · Reduced server costs · Faster release cycles via automated CI/CD · Zero regression issues on delivery",
+    "tags": [".NET Framework", ".NET Core", "Azure", "AWS", "CI/CD", "Modernization"]
+  }
+]

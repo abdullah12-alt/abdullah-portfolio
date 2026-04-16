@@ -91,8 +91,10 @@
                 <li><a href="#home" class="nav-link active">Home</a></li>
                 <li><a href="Abdullah-hassan-Resume.pdf" target="_blank" class="nav-link">Resume</a></li>
                 <li><a href="#experience" class="nav-link">Experience</a></li>
+                <li><a href="#case-studies" class="nav-link">Case Studies</a></li>
                 <li><a href="#technologies" class="nav-link">Technologies</a></li>
                 <li><a href="#projects" class="nav-link">Projects</a></li>
+                <li><a href="#services" class="nav-link">Services</a></li>
                 <li><a href="#contact" class="nav-link">Contact</a></li>
                 <li class="nav-item dropdown">
                     <button class="nav-link nav-more-toggle" id="nav-more-toggle" type="button" aria-expanded="false"
@@ -339,6 +341,20 @@
         </div>
     </section>
 
+    <!-- Case Studies Section -->
+    <section id="case-studies" class="section case-studies-section">
+        <div class="container">
+            <div class="section-header">
+                <span class="section-tag">Deep Dives</span>
+                <h2 class="section-title">Case Studies</h2>
+                <p class="section-description">Detailed breakdown of key impact-driven projects</p>
+            </div>
+            <div id="case-studies-container" class="case-studies-container">
+                <!-- Dynamically loaded from JSON -->
+            </div>
+        </div>
+    </section>
+
     <!-- Technologies Section -->
     <section id="technologies" class="section technologies-section">
         <div class="container">
@@ -419,6 +435,23 @@
             </div>
             <div id="blogs-grid" class="blogs-grid">
                 <!-- Dynamically loaded from JSON -->
+            </div>
+        </div>
+    </section>
+
+    <!-- Work With Me Section -->
+    <section id="services" class="section services-section">
+        <div class="container">
+            <div class="section-header">
+                <span class="section-tag">Packages</span>
+                <h2 class="section-title">Work With Me</h2>
+                <p class="section-description">Choose a package that fits your project needs</p>
+            </div>
+            <div id="services-grid" class="services-grid">
+                <!-- Dynamically loaded from JSON -->
+            </div>
+            <div class="services-note">
+                <p>Need a custom solution? <a href="#contact">Let's discuss</a></p>
             </div>
         </div>
     </section>
@@ -529,6 +562,12 @@
             emailjs.init("TBj0ne4MlpFDvJAyD"); // Replace with your Public Key
         })();
     </script>
+
+    <!-- Floating WhatsApp Button -->
+    <a href="https://wa.me/923071997751" class="whatsapp-float" target="_blank" aria-label="Contact on WhatsApp">
+        <i class="fab fa-whatsapp"></i>
+        <span class="whatsapp-tooltip">Chat with me</span>
+    </a>
 
     <!-- Main Script -->
     <script src="script.js"></script>

@@ -1400,6 +1400,7 @@ body {
 /* ===========================
    Testimonials Section
    =========================== */
+   
 .testimonials-grid {
     display: grid;
     grid-template-columns: repeat(auto-fit, minmax(400px, 1fr));
@@ -1490,3 +1491,336 @@ body {
         padding: var(--spacing-xl);
     }
 }
+
+/* ===========================
+   Case Studies Section
+   =========================== */
+.case-studies-container {
+    display: flex;
+    flex-direction: column;
+    gap: 3rem;
+    margin-top: 2rem;
+}
+
+.case-study-card {
+    display: grid;
+    grid-template-columns: 1fr 1.5fr;
+    gap: 2rem;
+    background: var(--bg-secondary);
+    border: 1px solid var(--border-color);
+    border-radius: var(--radius-lg);
+    overflow: hidden;
+    transition: all var(--transition-base);
+    position: relative;
+    opacity: 0; /* For animation */
+    transform: translateY(30px); /* For animation */
+}
+
+.case-study-card:hover {
+    transform: translateY(-10px);
+    border-color: var(--primary-color);
+    box-shadow: 0 20px 50px var(--shadow-color);
+}
+
+.case-study-icon-wrapper {
+    height: 100%;
+    min-height: 280px; /* Slightly shorter for better balance */
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    position: relative;
+    border-right: 1px solid var(--border-color);
+    overflow: hidden;
+    background: var(--bg-tertiary); /* Standard background */
+}
+
+.case-study-main-icon {
+    font-size: 6rem; /* Slightly smaller for elegance */
+    color: var(--text-primary);
+    filter: drop-shadow(0 5px 15px rgba(0,0,0,0.5));
+    transition: all var(--transition-base);
+    z-index: 2;
+    opacity: 0.9;
+}
+
+.case-study-card:hover .case-study-main-icon {
+    transform: scale(1.1);
+    opacity: 1;
+}
+
+.case-study-icon-wrapper::after {
+    content: '';
+    position: absolute;
+    width: 100%;
+    height: 100%;
+    background: radial-gradient(circle at center, hsla(0, 0%, 100%, 0.05) 0%, transparent 70%);
+    z-index: 1;
+}
+
+.case-study-details {
+    padding: 2rem;
+    display: flex;
+    flex-direction: column;
+    gap: 1.2rem;
+}
+
+.case-study-title {
+    font-size: 1.6rem;
+    font-weight: 700;
+    font-family: var(--font-secondary);
+    color: var(--text-primary);
+    margin-bottom: 0.2rem;
+}
+
+.case-study-section h4 {
+    display: flex;
+    align-items: center;
+    gap: 0.8rem;
+    font-size: 0.95rem;
+    font-weight: 700;
+    color: var(--primary-color);
+    margin-bottom: 0.4rem;
+    text-transform: uppercase;
+    letter-spacing: 1.5px;
+}
+
+.case-study-section p {
+    color: var(--text-secondary);
+    line-height: 1.6;
+    margin-left: 0; /* Align left with header for cleaner look */
+}
+
+/* ===========================
+   Work With Me Section
+   =========================== */
+.services-grid {
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(300px, 1fr));
+    gap: 2rem;
+    margin-top: 3rem;
+}
+
+.service-card {
+    background: var(--bg-secondary);
+    border: 1px solid var(--border-color);
+    border-radius: var(--radius-lg);
+    padding: 2.5rem;
+    display: flex;
+    flex-direction: column;
+    transition: all var(--transition-base);
+    position: relative;
+    overflow: hidden;
+}
+
+.service-card:hover {
+    transform: translateY(-5px);
+    border-color: var(--primary-color);
+    box-shadow: 0 10px 30px var(--shadow-color);
+}
+
+.service-card::before {
+    content: '';
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 3px;
+    background: var(--gradient-primary);
+    opacity: 0.8;
+}
+
+.service-icon-box {
+    width: 50px;
+    height: 50px;
+    background: var(--bg-tertiary);
+    border: 1px solid var(--border-color);
+    border-radius: var(--radius-md);
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    margin-bottom: 1.5rem;
+    color: var(--primary-color);
+    font-size: 1.4rem;
+}
+
+.service-title {
+    font-size: 1.4rem;
+    font-weight: 700;
+    font-family: var(--font-secondary);
+    color: var(--text-primary);
+    margin-bottom: 0.8rem;
+}
+
+.service-meta {
+    display: flex;
+    flex-direction: column;
+    gap: 0.5rem;
+    margin-bottom: 1.5rem;
+    font-size: 0.85rem;
+    color: var(--text-secondary);
+}
+
+.service-meta span {
+    display: flex;
+    align-items: center;
+    gap: 0.6rem;
+}
+
+.service-meta i {
+    color: var(--primary-color);
+    width: 16px;
+}
+
+.service-target {
+    color: var(--text-muted);
+    line-height: 1.6;
+    margin-bottom: 2rem;
+    font-size: 0.9rem;
+    font-style: italic;
+}
+
+.service-includes {
+    margin-bottom: 2rem;
+    flex-grow: 1;
+}
+
+.service-includes h4 {
+    font-size: 0.9rem;
+    font-weight: 700;
+    text-transform: uppercase;
+    letter-spacing: 1px;
+    color: var(--text-primary);
+    margin-bottom: 1rem;
+}
+
+.service-includes li {
+    display: flex;
+    align-items: center;
+    gap: 0.8rem;
+    margin-bottom: 0.6rem;
+    font-size: 0.85rem;
+    color: var(--text-secondary);
+}
+
+.service-includes li i {
+    color: var(--primary-color);
+    font-size: 0.75rem;
+}
+
+.btn-outline {
+    background: transparent;
+    border: 1px solid var(--primary-color);
+    color: var(--text-primary);
+    padding: 0.7rem 1.2rem;
+    border-radius: var(--radius-sm);
+    text-align: center;
+    font-weight: 600;
+    font-size: 0.9rem;
+    transition: all var(--transition-base);
+    text-decoration: none;
+}
+
+.btn-outline:hover {
+    background: var(--primary-color);
+    color: var(--bg-primary);
+}
+
+.services-note {
+    margin-top: 3rem;
+    text-align: center;
+    color: var(--text-muted);
+    font-size: 0.9rem;
+}
+
+.services-note a {
+    color: var(--text-primary);
+    font-weight: 600;
+    text-decoration: none;
+    border-bottom: 1px solid var(--primary-color);
+}
+
+@media (max-width: 992px) {
+    .case-study-icon-wrapper {
+        min-height: 200px;
+        border-right: none;
+        border-bottom: 1px solid var(--border-color);
+    }
+}
+
+/* ===========================
+   Floating WhatsApp Button
+   =========================== */
+.whatsapp-float {
+    position: fixed;
+    bottom: 30px;
+    right: 30px;
+    width: 60px;
+    height: 60px;
+    background-color: #25d366;
+    color: white;
+    border-radius: 50px;
+    text-align: center;
+    font-size: 30px;
+    box-shadow: 0 4px 10px rgba(0, 0, 0, 0.3);
+    z-index: 1000;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    text-decoration: none;
+    transition: all 0.3s ease;
+}
+
+.whatsapp-float:hover {
+    transform: scale(1.1);
+    background-color: #128c7e;
+    box-shadow: 0 6px 15px rgba(37, 211, 102, 0.5);
+}
+
+.whatsapp-tooltip {
+    position: absolute;
+    right: 80px;
+    background-color: var(--bg-secondary);
+    color: var(--text-primary);
+    padding: 8px 15px;
+    border-radius: var(--radius-sm);
+    font-size: 0.9rem;
+    font-weight: 600;
+    white-space: nowrap;
+    opacity: 0;
+    visibility: hidden;
+    transition: all 0.3s ease;
+    border: 1px solid var(--border-color);
+    pointer-events: none;
+}
+
+.whatsapp-tooltip::after {
+    content: '';
+    position: absolute;
+    right: -8px;
+    top: 50%;
+    transform: translateY(-50%);
+    border-width: 8px 0 8px 8px;
+    border-style: solid;
+    border-color: transparent transparent transparent var(--bg-secondary);
+}
+
+.whatsapp-float:hover .whatsapp-tooltip {
+    opacity: 1;
+    visibility: visible;
+    right: 75px;
+}
+
+@media (max-width: 768px) {
+    .whatsapp-float {
+        bottom: 20px;
+        right: 20px;
+        width: 50px;
+        height: 50px;
+        font-size: 25px;
+    }
+    
+    .whatsapp-tooltip {
+        display: none; /* Hide tooltip on mobile for cleaner look */
+    }
+}
+

@@ -205,6 +205,46 @@ async function loadTechnologies() {
     }
 }
 
+// Load Case Studies
+async function loadCaseStudies() {
+    try {
+        const response = await fetch('data/case-studies.json');
+        const caseStudies = await response.json();
+        const container = document.getElementById('case-studies-container');
+
+        caseStudies.forEach(cs => {
+            const card = document.createElement('div');
+            card.className = 'case-study-card';
+            card.innerHTML = `
+                <div class="case-study-icon-wrapper" style="background: ${cs.color}">
+                    <i class="${cs.icon} case-study-main-icon"></i>
+                </div>
+                <div class="case-study-details">
+                    <h3 class="case-study-title">${cs.title}</h3>
+                    <div class="case-study-section">
+                        <h4><i class="fas fa-exclamation-circle"></i> Problem</h4>
+                        <p>${cs.problem}</p>
+                    </div>
+                    <div class="case-study-section">
+                        <h4><i class="fas fa-tools"></i> What I Built</h4>
+                        <p>${cs.built}</p>
+                    </div>
+                    <div class="case-study-section">
+                        <h4><i class="fas fa-check-circle"></i> Result</h4>
+                        <p>${cs.result}</p>
+                    </div>
+                    <div class="case-study-tags">
+                        ${cs.tags.map(tag => `<span class="tag">${tag}</span>`).join('')}
+                    </div>
+                </div>
+            `;
+            container.appendChild(card);
+        });
+    } catch (error) {
+        console.error('Error loading case studies:', error);
+    }
+}
+
 // Load Projects
 async function loadProjects() {
     try {
@@ -381,6 +421,42 @@ async function loadTestimonials() {
     }
 }
 
+// Load Services
+async function loadServices() {
+    try {
+        const response = await fetch('data/services.json');
+        const services = await response.json();
+        const grid = document.getElementById('services-grid');
+
+        services.forEach(service => {
+            const card = document.createElement('div');
+            card.className = 'service-card';
+            card.style.setProperty('--accent-color', service.accent);
+            card.innerHTML = `
+                <div class="service-icon-box">
+                    <i class="${service.icon}"></i>
+                </div>
+                <h3 class="service-title">${service.title}</h3>
+                <div class="service-meta">
+                    <span><i class="far fa-clock"></i> ${service.timeline}</span>
+                    <span><i class="fas fa-tag"></i> ${service.investment}</span>
+                </div>
+                <p class="service-target">${service.target}</p>
+                <div class="service-includes">
+                    <h4>What's included:</h4>
+                    <ul>
+                        ${service.included.map(item => `<li><i class="fas fa-check"></i> ${item}</li>`).join('')}
+                    </ul>
+                </div>
+                <a href="#contact" class="btn btn-outline">Book a Call</a>
+            `;
+            grid.appendChild(card);
+        });
+    } catch (error) {
+        console.error('Error loading services:', error);
+    }
+}
+
 // ===========================
 // Contact Form
 // ===========================
@@ -449,7 +525,7 @@ document.querySelectorAll('a[href^="#"]').forEach(anchor => {
 // Scroll Animations
 // ===========================
 const animateOnScroll = () => {
-    const elements = document.querySelectorAll('.tech-card, .project-card, .education-card, .achievement-card, .blog-card, .timeline-item');
+    const elements = document.querySelectorAll('.tech-card, .project-card, .education-card, .achievement-card, .blog-card, .timeline-item, .case-study-card, .service-card');
 
     const scrollObserver = new IntersectionObserver((entries) => {
         entries.forEach(entry => {
@@ -485,6 +561,8 @@ document.addEventListener('DOMContentLoaded', async () => {
     // Load dynamic content
     await Promise.all([
         loadTechnologies(),
+        loadCaseStudies(),
+        loadServices(),
         loadProjects(),
         loadEducation(),
         loadCertifications(),
