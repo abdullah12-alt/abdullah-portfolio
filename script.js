@@ -448,7 +448,7 @@ async function loadServices() {
                         ${service.included.map(item => `<li><i class="fas fa-check"></i> ${item}</li>`).join('')}
                     </ul>
                 </div>
-                <a href="#contact" class="btn btn-outline">Book a Call</a>
+                <a href="https://calendly.com/abdullahhassancode/30min" target="_blank" class="btn btn-outline">Book a Call</a>
             `;
             grid.appendChild(card);
         });
